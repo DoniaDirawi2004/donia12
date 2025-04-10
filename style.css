@@ -1,0 +1,27 @@
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* يسمح للصور بالنزول عند الحاجة */
+    gap: 15px;
+    padding: 20px;
+}
+.gallery img, .gallery video {
+    width: 250px; 
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+.gallery img:hover, .gallery video:hover {
+    transform: scale(1.05);
+}
+
+.left {
+    align-self: flex-start; 
+}
+
+.center {
+    align-self: center; }
+
+.right {
+    align-self: flex-end; 
+}
